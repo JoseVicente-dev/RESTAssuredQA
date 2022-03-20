@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 public class FileReader {
 
     private final String USER_DIR = System.getProperty("user.dir");
-    private final String TEST_PATH = "\\src\\test";
+    private final String TEST_PATH = "\\src\\test\\";
 
     private String pathFromContentRoot;
 

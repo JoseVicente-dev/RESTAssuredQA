@@ -1,16 +1,18 @@
 package co.com.sofka.util.enums;
 
 public enum RegisterKeys {
-    NAME("[name]"),
-    JOB("[job]");
+
+    EMAIL("[email]"),
+    PASSWORD("[password]");
 
     private final String value;
+
+    public String getValue() {
+        return value;
+    }
 
     RegisterKeys(String value) {
         this.value = value;
     }
 
-    public String getValue() {
-        return value;
-    }
 }
