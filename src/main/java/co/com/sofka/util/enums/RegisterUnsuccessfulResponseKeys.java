@@ -1,11 +1,10 @@
 package co.com.sofka.util.enums;
 
-public enum RegisterResponseKeys {
+public enum RegisterUnsuccessfulResponseKeys {
 
-    ID("id"),
-    TOKEN("token");
+    ERROR("error");
 
-    RegisterResponseKeys(String value) {
+    RegisterUnsuccessfulResponseKeys(String value) {
         this.value = value;
     }
 

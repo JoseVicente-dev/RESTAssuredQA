@@ -1,9 +1,8 @@
 package co.com.sofka.util.enums;
 
-public enum RegisterKeys {
+public enum RegisterUnsuccessfulKeys {
 
-    EMAIL("[email]"),
-    PASSWORD("[password]");
+    EMAIL("[email]");
 
     private final String value;
 
@@ -11,7 +10,7 @@ public enum RegisterKeys {
         return value;
     }
 
-    RegisterKeys(String value) {
+    RegisterUnsuccessfulKeys(String value) {
         this.value = value;
     }
 
