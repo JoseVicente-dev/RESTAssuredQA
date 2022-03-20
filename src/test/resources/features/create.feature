@@ -4,6 +4,6 @@ Feature: Creacion de usuarios
   So that poder otorgarles permisos y funciones dentro del aplicativo
 
   Scenario: Crear usuario
-    Given que como administrador ingreso al modulo de crear usuarios
-    When cree el usuario con nombre "morpheus" y cargo "leader"
-    Then se creara un nuevo usuario en la base de datos con sus datos y un id
+    Given que como administrador cree el usuario con nombre "morpheus" y cargo "leader"
+    When envie la orden a la base de datos
+    Then se creara un nuevo usuario con sus datos y un id
