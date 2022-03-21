@@ -1,4 +1,4 @@
-package co.com.sofka.stepdefinitions.create;
+package co.com.sofka.stepdefinitions.register;
 
 import co.com.sofka.stepdefinitions.setup.services.ServiceSetUp;
 import co.com.sofka.util.enums.RegisterUnsuccessfulKeys;

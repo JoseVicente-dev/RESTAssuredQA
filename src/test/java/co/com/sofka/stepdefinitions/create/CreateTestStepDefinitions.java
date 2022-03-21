@@ -25,6 +25,7 @@ public class CreateTestStepDefinitions extends ServiceSetUp {
     private Response response;
     private RequestSpecification request;
     private FileReader fileReader;
+
     private CreateModel createModel;
 
     private final String CREATE_FILE_PATH_FROM_CONTENT_ROOT = "resources\\files\\create.json";
@@ -69,7 +70,10 @@ public class CreateTestStepDefinitions extends ServiceSetUp {
 
             response.then()
                     .statusCode(HttpStatus.SC_CREATED)
-                    .body(CreateResponseKeys.NAME.getValue(),Matchers.containsString(createModel.getName()),CreateResponseKeys.JOB.getValue(),Matchers.containsString(createModel.getJob()),CreateResponseKeys.ID.getValue(),Matchers.notNullValue());
+                    .body(CreateResponseKeys.NAME.getValue(),Matchers.containsString(createModel.getName()),
+                            CreateResponseKeys.JOB.getValue(),Matchers.containsString(createModel.getJob()),
+                            CreateResponseKeys.ID.getValue(),Matchers.notNullValue(),
+                            CreateResponseKeys.CREATED_AT.getValue(),Matchers.notNullValue());
 
         } catch (Exception e) {
             LOGGER.error(e.getMessage(), e);
