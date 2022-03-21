@@ -67,7 +67,6 @@ public class RegisterTestStepDefinitions extends ServiceSetUp {
                     .statusCode(HttpStatus.SC_BAD_REQUEST)
                     .body(RegisterUnsuccessfulResponseKeys.ERROR.getValue(), Matchers.containsString(errorMessage));
 
-
         }catch (Exception e) {
             LOGGER.error(e.getMessage(), e);
             Assertions.fail(e.getMessage());

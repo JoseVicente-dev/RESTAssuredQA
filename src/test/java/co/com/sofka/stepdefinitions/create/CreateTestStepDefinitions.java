@@ -27,7 +27,7 @@ public class CreateTestStepDefinitions extends ServiceSetUp {
     private FileReader fileReader;
     private CreateModel createModel;
 
-    private final String REGISTER_FILE_PATH_FROM_CONTENT_ROOT = "resources\\files\\create.json";
+    private final String CREATE_FILE_PATH_FROM_CONTENT_ROOT = "resources\\files\\create.json";
 
     @Given("que como administrador cree el usuario con nombre {string} y cargo {string}")
     public void queComoAdministradorCreeElUsuarioConNombreYCargo(String name, String job) {
@@ -38,7 +38,7 @@ public class CreateTestStepDefinitions extends ServiceSetUp {
             createModel.setName(name);
             createModel.setJob(job);
 
-            fileReader = new FileReader(REGISTER_FILE_PATH_FROM_CONTENT_ROOT);
+            fileReader = new FileReader(CREATE_FILE_PATH_FROM_CONTENT_ROOT);
             request = given()
                     .contentType(ContentType.JSON)
                     .body(
