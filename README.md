@@ -1,3 +1,3 @@
 # REST-assured QA
 
-## REST-assured, API-REST, automation, test, Selenium
+## Keywords: REST-assured, API-REST, automation, testing, cucumber
